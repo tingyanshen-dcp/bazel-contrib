@@ -1,0 +1,7 @@
+# MacOS
+.DS_Store
+
+# Bazel
+bazel-*
+user.bazelrc
+MODULE.bazel.lock

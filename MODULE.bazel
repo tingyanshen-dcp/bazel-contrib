@@ -1,0 +1,7 @@
+""" Bazel Contrib """
+module(
+    name = "bazel-contrib",
+    compatibility_level = 1,
+    repo_name = "bazel_contrib",
+    version = "2025.0.0-SNAPSHOT",
+)

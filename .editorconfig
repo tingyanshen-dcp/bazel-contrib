@@ -10,3 +10,10 @@ insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[{*.BUILD,*.bzl,*.bazel,*.MODULE.bazel}]
+indent_size = 4
+
+[.gitmodules]
+indent_size = 4
+indent_style = tab
