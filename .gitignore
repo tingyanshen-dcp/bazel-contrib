@@ -5,3 +5,6 @@
 bazel-*
 user.bazelrc
 MODULE.bazel.lock
+
+# Generated files
+/registries_publish
