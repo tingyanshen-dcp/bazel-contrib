@@ -1,0 +1,30 @@
+name: Deploy Registries
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - name: Generated registries publish directory
+        run: |
+          mkdir -p registries_publish/central
+          cp -rf registries/central/modules registries_publish/central
+          cp -rf registries/central/bazel_registry.json registries_publish/central
+
+      - name: Deploy to GitHub registries branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: registries
+          publish_dir: ./registries_publish
+          force_orphan: true
