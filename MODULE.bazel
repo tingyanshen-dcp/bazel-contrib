@@ -5,3 +5,5 @@ module(
     repo_name = "bazel_contrib",
     version = "2025.0.0-SNAPSHOT",
 )
+
+bazel_dep(name = "rules_license", version = "1.0.0")
