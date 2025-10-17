@@ -1,0 +1,19 @@
+{
+    "homepage": "https://javacc.org/",
+    "maintainers": [
+        {
+            "email": "john@john-millikin.com",
+            "github": "jmillikin",
+            "github_user_id": 646128,
+            "name": "John Millikin"
+        }
+    ],
+    "repository": [
+        "github:javacc/javacc"
+    ],
+    "versions": [
+        "7.0.13",
+        "7.0.13.bcr.1"
+    ],
+    "yanked_versions": {}
+}
