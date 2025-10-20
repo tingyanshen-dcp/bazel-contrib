@@ -1,0 +1,14 @@
+{
+  "url": "https://github.com/hyperledger/besu/archive/refs/tags/23.10.3-hotfix.tar.gz",
+  "integrity": "sha256-fpgYKkJXFlLC2nl+gYx6c1IBPo6uQaOXlnDWtHxfUP4=",
+  "strip_prefix": "besu-23.10.3-hotfix",
+  "overlay": {
+    "BUILD.bazel": "sha256-tzqCEIW44v2HGwRL7Sg7jRc+XnRyW38TbfXhJAJC4TE=",
+    "MODULE.bazel": "sha256-uw8B8PV37jS368+jjNr5XnDW6LZiBCTDuYsusWrjDAg=",
+    "defs.bzl": "sha256-HsdKMs/3RlbXOIbQmlXmxl7Fc2c2k9l9sjrbnD2220U="
+  },
+  "patch_strip": 1,
+  "patches": {
+    "version.patch": "sha256-HRcm0KYsl8jYJd0y6YGVzHiwb3nCaozz9NoUyyVZi8M="
+  }
+}

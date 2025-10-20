@@ -1,0 +1,18 @@
+{
+  "homepage": "https://github.com/hyperledger/besu",
+   "maintainers": [
+        {
+            "email": "yan.shen@decurret-dcp.com",
+            "github": "tingyanshen-dcp",
+            "github_user_id": 229675525,
+            "name": "Tingyan Shen"
+        }
+    ],
+  "repository": [
+      "github:hyperledger/besu"
+  ],
+  "versions": [
+      "24.10.0"
+  ],
+  "yanked_versions": {}
+}
