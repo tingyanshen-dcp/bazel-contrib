@@ -7,3 +7,13 @@ module(
 )
 
 bazel_dep(name = "rules_license", version = "1.0.0")
+
+bazel_dep(name = "immutables", repo_name = "immutables_209030", version = "2.9.3")
+bazel_dep(name = "immutables", repo_name = "immutables_201010", version = "2.10.1")
+multiple_version_override(
+    module_name = "immutables",
+    versions = [
+        "2.9.3",
+        "2.10.1",
+    ],
+)
