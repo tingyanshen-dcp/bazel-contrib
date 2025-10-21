@@ -2,7 +2,13 @@ load("@rules_java//java:defs.bzl", "java_binary", "java_library")
 load("@rules_jvm_external//:defs.bzl", "artifact")
 
 def besu_rules(
-        repo_name = "besu_maven_23103_hotfix"):
+        repo_name = "besu_maven_23103_hotfix",
+        dagger = "dagger",
+        immutables = "immutables"):
+    
+    DAGGER = "@%s//:dagger" % dagger
+    IMMUTABLES = "@%s//:immutables_value" % immutables
+
     java_binary(
         name = "besu_app",
         main_class = "org.hyperledger.besu.Besu",
@@ -22,7 +28,7 @@ def besu_rules(
             ":consensus_qbft",
             ":crypto_algorithms",
             ":crypto_services",
-            "@dagger//:dagger",
+            DAGGER,
             ":datatypes",
             ":enclave",
             ":ethereum_api",
@@ -307,7 +313,7 @@ def besu_rules(
             ":ethereum_rlp",
             ":ethereum_trie",
             ":evm",
-            "@immutables//:immutables_value",
+            IMMUTABLES,
             ":metrics_core",
             ":nat",
             ":plugin_api",
@@ -386,13 +392,13 @@ def besu_rules(
         deps = [
             ":config",
             ":crypto_algorithms",
-            "@dagger//:dagger",
+            DAGGER,
             ":datatypes",
             ":enclave",
             ":ethereum_rlp",
             ":ethereum_trie",
             ":evm",
-            "@immutables//:immutables_value",
+            IMMUTABLES,
             ":metrics_core",
             ":plugin_api",
             ":services_kvstore",
@@ -430,7 +436,7 @@ def besu_rules(
         srcs = native.glob(["ethereum/eth/src/main/java/**/*.java"]),
         deps = [
             ":config",
-            "@dagger//:dagger",
+            DAGGER,
             ":datatypes",
             ":ethereum_core",
             ":ethereum_p2p",
@@ -438,7 +444,7 @@ def besu_rules(
             ":ethereum_rlp",
             ":ethereum_trie",
             ":evm",
-            "@immutables//:immutables_value",
+            IMMUTABLES,
             ":metrics_core",
             ":plugin_api",
             ":services_kvstore",
@@ -478,7 +484,7 @@ def besu_rules(
             ":ethereum_eth",
             ":ethereum_p2p",
             ":evm",
-            "@immutables//:immutables_value",
+            IMMUTABLES,
             ":plugin_api",
             ":util",
             artifact("org.immutables:value-annotations", repo_name),
@@ -504,7 +510,7 @@ def besu_rules(
             ":datatypes",
             ":ethereum_core",
             ":ethereum_rlp",
-            "@immutables//:immutables_value",
+            IMMUTABLES,
             ":metrics_core",
             ":nat",
             ":pki",
@@ -635,7 +641,7 @@ def besu_rules(
             ":crypto_algorithms",
             ":datatypes",
             ":ethereum_rlp",
-            "@immutables//:immutables_value",
+            IMMUTABLES,
             ":plugin_api",
             artifact("org.immutables:value-annotations", repo_name),
             artifact("com.google.guava:guava", repo_name),
@@ -652,7 +658,7 @@ def besu_rules(
             ":crypto_algorithms",
             ":ethereum_rlp",
             ":ethereum_trie",
-            "@immutables//:immutables_value",
+            IMMUTABLES,
             artifact("org.immutables:value-annotations", repo_name),
             artifact("com.google.guava:guava", repo_name),
             artifact("io.opentelemetry:opentelemetry-api", repo_name),
@@ -692,7 +698,7 @@ def besu_rules(
         srcs = native.glob(["metrics/core/src/main/java/**/*.java"]),
         deps = [
             ":plugin_api",
-            "@dagger//:dagger",
+            DAGGER,
             artifact("org.slf4j:slf4j-api", repo_name),
             artifact("com.google.guava:guava", repo_name),
             artifact("info.picocli:picocli", repo_name),
