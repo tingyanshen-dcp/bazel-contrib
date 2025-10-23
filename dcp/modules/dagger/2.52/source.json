@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/google/dagger/archive/refs/tags/dagger-2.52.tar.gz",
+  "integrity": "sha256-d24SXb8c0gsgzS6UUSnThZgZVdTCEY/GuR1ebVF6rRc=",
+  "strip_prefix": "dagger-dagger-2.52",
+  "patch_strip": 0,
+  "overlay": {
+    "BUILD.bazel": "sha256-HZU53vk2XT0iFrlEI98ynJtvsAlv/KkSM+ZnVvOV5cY=",
+    "MODULE.bazel": "sha256-RveAwg1IJL7KVOAz0H/XMNVJwMdbEC1zcR3vDwP6s/c=",
+    ".bazelignore": "sha256-TQhYtNq32gneuJLgw04F+iiz0gL7i6XS4g91Wui+iM8="
+  }
+}

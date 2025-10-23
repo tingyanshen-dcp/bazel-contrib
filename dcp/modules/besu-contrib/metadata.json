@@ -1,0 +1,18 @@
+{
+    "homepage": "https://github.com/tingyanshen-dcp/besu-contrib",
+    "maintainers": [
+        {
+            "email": "yan.shen@decurret-dcp.com",
+            "github": "tingyanshen-dcp",
+            "github_user_id": 229675525,
+            "name": "Tingyan Shen"
+        }
+    ],
+    "repository": [
+        "github:tingyanshen-dcp/besu-contrib"
+    ],
+    "versions": [
+        "2025.0.0-SNAPSHOT"
+    ],
+    "yanked_versions": {}
+}

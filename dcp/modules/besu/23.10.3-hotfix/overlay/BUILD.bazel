@@ -1,0 +1,3 @@
+load("//:defs.bzl", "besu_rules")
+
+besu_rules()
