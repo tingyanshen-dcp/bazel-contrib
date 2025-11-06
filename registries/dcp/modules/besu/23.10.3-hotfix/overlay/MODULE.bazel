@@ -1,4 +1,5 @@
 """ Hyperledger Besu """
+
 module(
     name = "besu",
     version = "23.10.3-hotfix",
@@ -147,12 +148,10 @@ bazel_dep(name = "dagger", version = "2.45")
 bazel_dep(name = "immutables", version = "2.9.3")
 
 maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
-
 maven.install(
     name = "besu_maven_23103_hotfix",
     artifacts = BESU_JAVA_ARTIFACTS,
     repositories = MAVEN_REPOSITORIES,
     strict_visibility = True,
 )
-
 use_repo(maven, "besu_maven_23103_hotfix")

@@ -4,8 +4,8 @@
   "strip_prefix": "besu-23.10.3-hotfix",
   "overlay": {
     "BUILD.bazel": "sha256-tzqCEIW44v2HGwRL7Sg7jRc+XnRyW38TbfXhJAJC4TE=",
-    "MODULE.bazel": "sha256-uw8B8PV37jS368+jjNr5XnDW6LZiBCTDuYsusWrjDAg=",
-    "defs.bzl": "sha256-ULe6ZqRxZVvB4opyIpXOiwK0o3LkoPqtsBHGNpkaUB4=",
+    "MODULE.bazel": "sha256-KSHLxfVhTTMyjVqvI6L2sybWLS/vwcGHPEHoGHDfp1M=",
+    "defs.bzl": "sha256-pqRw2zhY6iSq9i+nl7WySEy9dUVEdyym9h/jU/cmkZY=",
     "version.patch": "sha256-HRcm0KYsl8jYJd0y6YGVzHiwb3nCaozz9NoUyyVZi8M="
   },
   "patch_strip": 1,

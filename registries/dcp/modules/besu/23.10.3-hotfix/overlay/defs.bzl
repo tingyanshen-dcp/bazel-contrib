@@ -5,7 +5,6 @@ def besu_rules(
         repo_name = "besu_maven_23103_hotfix",
         dagger = "dagger",
         immutables = "immutables"):
-    
     DAGGER = "@%s//:dagger" % dagger
     IMMUTABLES = "@%s//:immutables_value" % immutables
 
