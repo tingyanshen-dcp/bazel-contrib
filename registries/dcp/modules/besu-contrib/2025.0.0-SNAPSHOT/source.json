@@ -1,9 +1,9 @@
 {
     "url": "https://github.com/tingyanshen-dcp/besu-contrib/archive/refs/heads/main.zip",
-    "integrity": "sha256-AuZ+BkBbomgDl0xNZVdsw2Vl+s2uFNyxkkLjS00zW3k=",
+    "integrity": "sha256-vjlhfrojELEEhpXSvqcmmXyFrLkvPtJ2g5mR+l0Vm08=",
     "strip_prefix": "besu-contrib-main",
     "patches": {
-        "module_dot_bazel.patch": "sha256-6+HMLbypPEvXD6QTe84qZoTDX9qbu7cHsOgjWjQjdCI="
+        "module_dot_bazel.patch": "sha256-+ME0fbyf3hK6vhsGZBjpuXoG+0WhEPov4vG0cpkHuDc="
     },
     "patch_strip": 1
 }

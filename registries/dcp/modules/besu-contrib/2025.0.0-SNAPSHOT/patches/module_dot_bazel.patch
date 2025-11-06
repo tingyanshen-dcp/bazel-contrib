@@ -1,22 +1,17 @@
 diff --git a/MODULE.bazel b/MODULE.bazel
-index 8946104..9769140 100644
+index 7d0f340..3b41082 100644
 --- a/MODULE.bazel
 +++ b/MODULE.bazel
-@@ -3,7 +3,7 @@ module(
-     name = "besu-contrib",
-     compatibility_level = 1,
-     repo_name = "besu_contrib",
--    version = "2025.0.0-SNAOPSHOT",
-+    version = "2025.0.0-SNAPSHOT",
- )
- 
- # Bazel module dependencies
-@@ -74,4 +74,308 @@ pull(
+@@ -74,5 +74,315 @@ pull(
      registry = "gcr.io",
  )
  
--include("//migration:migration.MODULE.bazel")
-+# include("//migration:migration.MODULE.bazel")
+-include("//migration/23.10.3-hotfix:besu.MODULE.bazel")
+-include("//migration/24.10.0:besu.MODULE.bazel")
++# include("//migration/23.10.3-hotfix:besu.MODULE.bazel")
++# include("//migration/24.10.0:besu.MODULE.bazel")
++
++""" Besu 23.10.3-hotfix """
 +
 +BESU_23103_HOTFIX_ARTIFACTS = [
 +    "org.antlr:antlr4:4.11.1",
@@ -146,6 +141,8 @@ index 8946104..9769140 100644
 +    "tech.pegasys.discovery:discovery:22.2.0",
 +    "com.github.oshi:oshi-core:6.4.1",
 +]
++
++""" Besu 24.10.0 """
 +
 +BESU_24100_ARTIFACTS = [
 +    "com.fasterxml.jackson.core:jackson-databind:2.17.2",
@@ -291,7 +288,9 @@ index 8946104..9769140 100644
 +    lock_file = "//migration/23.10.3-hotfix:maven_install.json",
 +    repositories = BESU_MAVEN_REPOSITORIES,
 +)
++
 +use_repo(maven, "maven_besu_migration_23103_hotfix")
++
 +maven.install(
 +    name = "maven_besu_migration_24100",
 +    artifacts = BESU_24100_ARTIFACTS,
