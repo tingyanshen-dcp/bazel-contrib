@@ -2,7 +2,10 @@
 .DS_Store
 
 # Bazel
-bazel-*
+bazel-bazel-contrib
+bazel-bin
+bazel-out
+bazel-testlogs
 user.bazelrc
 MODULE.bazel.lock
 

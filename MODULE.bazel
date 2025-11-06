@@ -41,3 +41,4 @@ multiple_version_override(
 )
 
 bazel_dep(name = "besu-contrib", version = "2025.0.0-SNAPSHOT")
+bazel_dep(name = "bazel-contrib-lint", version = "2025.0.0-SNAPSHOT")
