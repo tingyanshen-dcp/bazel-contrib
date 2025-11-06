@@ -1,6 +1,6 @@
 {
-  "url": "https://github.com/tingyanshen-dcp/bazel-contrib/archive/refs/heads/main.zip",
-  "integrity": "sha256-S2neACnQ4CgqwLPwrxze5dx6sndGjTgV5URB4nqSqzg=",
+  "url": "https://github.com/tingyanshen-dcp/bazel-contrib/archive/4792ac4e686375ccd18b30e75a67adcc54c13a40.zip",
+  "integrity": "sha256-f4Y+QkWzcv5qf8tEP5vWNP1eN4qxdtGLFSXEYMfE9/k=",
   "strip_prefix": "bazel-contrib-main",
   "overlay": {
     "MODULE.bazel": "sha256-tHuFx7xsWTlrW9f+WFOP5xboaU0WxbNfECCS/VeP3RU="
