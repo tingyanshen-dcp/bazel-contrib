@@ -12,6 +12,7 @@
       "github:hyperledger/besu"
   ],
   "versions": [
+      "23.10.0",
       "23.10.3-hotfix",
       "24.10.0"
   ],
