@@ -542,7 +542,7 @@ def besu_rules(
             artifact("io.netty:netty-common", repo_name),
             artifact("io.netty:netty-transport", repo_name),
             artifact("org.bouncycastle:bcprov-jdk18on", repo_name),
-            artifact("org.bouncycastle:bcprov-jdk15on", repo_name),
+            # artifact("org.bouncycastle:bcprov-jdk15on", repo_name),
         ],
     )
 

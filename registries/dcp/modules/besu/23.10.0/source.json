@@ -5,11 +5,13 @@
   "overlay": {
     "BUILD.bazel": "sha256-tzqCEIW44v2HGwRL7Sg7jRc+XnRyW38TbfXhJAJC4TE=",
     "MODULE.bazel": "sha256-qtPXkev8iJju9Kbz7PBaKpTToJ0rVXK1unaXb2HdFbw",
-    "defs.bzl": "sha256-rAdulXtZNBB/0+Glg74Ol/DnOfYnrot0XTHcFwQdqCc=",
-    "version.patch": "sha256-5wlRUm7mRhkcYPQKhxvjUi+/WIxrIzVPENpZRReY8DA="
+    "defs.bzl": "sha256-XBDWV6os6b9qBPQ0Q4EjEd7qmvEE1Kzri3KuQz5KTW4=",
+    "version.patch": "sha256-5wlRUm7mRhkcYPQKhxvjUi+/WIxrIzVPENpZRReY8DA=",
+    "bcprov_jdk15on.patch":"sha256-mk/vxd4JvnPDWH1w/+id+qTRGR+P6fuTpsOm5lOXTeY="
   },
   "patch_strip": 1,
   "patches": {
-    "version.patch": "sha256-5wlRUm7mRhkcYPQKhxvjUi+/WIxrIzVPENpZRReY8DA="
+    "version.patch": "sha256-5wlRUm7mRhkcYPQKhxvjUi+/WIxrIzVPENpZRReY8DA=",
+    "bcprov_jdk15on.patch":"sha256-mk/vxd4JvnPDWH1w/+id+qTRGR+P6fuTpsOm5lOXTeY="
   }
 }

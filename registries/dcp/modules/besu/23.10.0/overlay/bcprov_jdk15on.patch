@@ -1,0 +1,36 @@
+diff --git a/ethereum/p2p/src/main/java/org/hyperledger/besu/ethereum/p2p/rlpx/framing/Framer.java b/ethereum/p2p/src/main/java/org/hyperledger/besu/ethereum/p2p/rlpx/framing/Framer.java
+index 2e9cad6dfe..1302b3765d 100644
+--- a/ethereum/p2p/src/main/java/org/hyperledger/besu/ethereum/p2p/rlpx/framing/Framer.java
++++ b/ethereum/p2p/src/main/java/org/hyperledger/besu/ethereum/p2p/rlpx/framing/Framer.java
+@@ -16,7 +16,6 @@ package org.hyperledger.besu.ethereum.p2p.rlpx.framing;
+ 
+ import static io.netty.buffer.ByteBufUtil.hexDump;
+ import static io.netty.buffer.Unpooled.wrappedBuffer;
+-import static org.bouncycastle.pqc.math.linearalgebra.ByteUtils.xor;
+ import static org.hyperledger.besu.ethereum.p2p.rlpx.RlpxFrameConstants.LENGTH_FRAME_SIZE;
+ import static org.hyperledger.besu.ethereum.p2p.rlpx.RlpxFrameConstants.LENGTH_MAX_MESSAGE_FRAME;
+ 
+@@ -396,6 +395,23 @@ public class Framer {
+     return pad == 0 ? 0 : 16 - pad;
+   }
+ 
++  /**
++   * Compute the bitwise XOR of two arrays of bytes. The arrays have to be of same length. No length
++   * checking is performed.
++   *
++   * @param x1 the first array
++   * @param x2 the second array
++   * @return x1 XOR x2
++   */
++  private static byte[] xor(final byte[] x1, final byte[] x2) {
++    byte[] out = new byte[x1.length];
++
++    for (int i = x1.length - 1; i >= 0; i--) {
++      out[i] = (byte) (x1[i] ^ x2[i]);
++    }
++    return out;
++  }
++
+   @FormatMethod
+   private static FramingException error(final String s, final Object... params) {
+     return new FramingException(String.format(s, params));
