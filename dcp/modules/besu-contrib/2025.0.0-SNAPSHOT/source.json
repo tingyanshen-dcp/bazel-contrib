@@ -1,0 +1,8 @@
+{
+    "url": "https://github.com/tingyanshen-dcp/besu-contrib/archive/refs/heads/main.zip",
+    "integrity": "",
+    "strip_prefix": "besu-contrib-main",
+    "overlay": {
+        "MODULE.bazel": ""
+    }
+}

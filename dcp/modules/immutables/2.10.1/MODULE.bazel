@@ -1,0 +1,28 @@
+""" Google Dagger"""
+
+module(
+    name = "immutables",
+    version = "2.10.1",
+    compatibility_level = 201010,
+)
+
+DAGGER_JAVA_ARTIFACTS = [
+    "org.immutables:value:2.10.1",
+    "org.immutables:value-processor:2.10.1",
+]
+
+MAVEN_REPOSITORIES = [
+    "https://repo.maven.apache.org/maven2/",
+]
+
+bazel_dep(name = "rules_java", version = "8.16.1")
+bazel_dep(name = "rules_jvm_external", version = "6.8")
+
+maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+maven.install(
+    name = "immutables_maven_201010",
+    artifacts = DAGGER_JAVA_ARTIFACTS,
+    repositories = MAVEN_REPOSITORIES,
+    strict_visibility = True,
+)
+use_repo(maven, "immutables_maven_201010")

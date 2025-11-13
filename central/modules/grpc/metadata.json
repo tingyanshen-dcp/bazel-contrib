@@ -1,0 +1,108 @@
+{
+    "homepage": "https://github.com/grpc/grpc",
+    "maintainers": [
+        {
+            "email": "veblush@google.com",
+            "github": "veblush",
+            "name": "Esun Kim",
+            "github_user_id": 2793282
+        },
+        {
+            "email": "bpawan@google.com",
+            "github": "pawbhard",
+            "name": "Pawan Bhardwaj",
+            "github_user_id": 13415978
+        },
+        {
+            "email": "eostroukhov@google.com",
+            "github": "eugeneo",
+            "name": "Eugene Ostroukhov",
+            "github_user_id": 287917
+        },
+        {
+            "email": "hork@google.com",
+            "github": "drfloob",
+            "name": "Adam Heller",
+            "github_user_id": 295906
+        },
+        {
+            "email": "rishesh@google.com",
+            "github": "rishesh007",
+            "name": "Rishesh Agarwal",
+            "github_user_id": 40896662
+        },
+        {
+            "email": "roth@google.com",
+            "github": "markdroth",
+            "name": "Mark Roth",
+            "github_user_id": 18664614
+        },
+        {
+            "email": "yashkt@google.com",
+            "github": "yashykt",
+            "name": "Yash Tibrewal",
+            "github_user_id": 4181124
+        },
+        {
+            "email": "apolcyn@google.com",
+            "github": "apolcyn",
+            "name": "Alexander Polcyn",
+            "github_user_id": 9566254
+        },
+        {
+            "email": "sergiitk@google.com",
+            "github": "sergiitk",
+            "name": "Sergii Tkachenko",
+            "github_user_id": 672669
+        },
+        {
+            "email": "ssreenithi@google.com",
+            "github": "sreenithi",
+            "name": "Sreenithi Sridharan",
+            "github_user_id": 22791051
+        },
+        {
+            "email": "stanleycheung@google.com",
+            "github": "stanley-cheung",
+            "name": "Stanley Cheung",
+            "github_user_id": 11674202
+        }
+    ],
+    "repository": [
+        "github:grpc/grpc"
+    ],
+    "versions": [
+        "1.41.0",
+        "1.47.0",
+        "1.48.1",
+        "1.48.1.bcr.1",
+        "1.48.1.bcr.2",
+        "1.48.1.bcr.3",
+        "1.56.3",
+        "1.56.3.bcr.1",
+        "1.62.1",
+        "1.62.1.bcr.1",
+        "1.62.1.bcr.2",
+        "1.63.1",
+        "1.63.1.bcr.1",
+        "1.65.0",
+        "1.66.0",
+        "1.66.0.bcr.1",
+        "1.66.0.bcr.2",
+        "1.66.0.bcr.3",
+        "1.68.0",
+        "1.69.0",
+        "1.70.1",
+        "1.71.0",
+        "1.71.1",
+        "1.71.2",
+        "1.72.0-pre1",
+        "1.72.0",
+        "1.73.0-pre1",
+        "1.73.1",
+        "1.74.0-pre2",
+        "1.74.0",
+        "1.74.1"
+    ],
+    "yanked_versions": {}
+}

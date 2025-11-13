@@ -1,0 +1,26 @@
+diff --git a/besu/src/main/java/org/hyperledger/besu/BesuInfo.java b/besu/src/main/java/org/hyperledger/besu/BesuInfo.java
+index 54447a5960..c480b04292 100644
+--- a/besu/src/main/java/org/hyperledger/besu/BesuInfo.java
++++ b/besu/src/main/java/org/hyperledger/besu/BesuInfo.java
+@@ -24,7 +24,7 @@ import java.util.Optional;
+  */
+ public final class BesuInfo {
+   private static final String CLIENT = "besu";
+-  private static final String VERSION = BesuInfo.class.getPackage().getImplementationVersion();
++  private static final String VERSION = "23.10.0";
+   private static final String OS = PlatformDetector.getOS();
+   private static final String VM = PlatformDetector.getVM();
+ 
+diff --git a/besu/src/main/java/org/hyperledger/besu/cli/ConfigurationOverviewBuilder.java b/besu/src/main/java/org/hyperledger/besu/cli/ConfigurationOverviewBuilder.java
+index 5bd1d84a29..66539f2c99 100644
+--- a/besu/src/main/java/org/hyperledger/besu/cli/ConfigurationOverviewBuilder.java
++++ b/besu/src/main/java/org/hyperledger/besu/cli/ConfigurationOverviewBuilder.java
+@@ -208,7 +208,7 @@ public class ConfigurationOverviewBuilder {
+    */
+   public String build() {
+     final List<String> lines = new ArrayList<>();
+-    lines.add("Besu version " + BesuInfo.class.getPackage().getImplementationVersion());
++    lines.add("Besu version " + BesuInfo.shortVersion());
+     lines.add("");
+     lines.add("Configuration:");
+ 

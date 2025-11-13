@@ -1,0 +1,15 @@
+{
+  "url": "https://github.com/hyperledger/besu/archive/refs/tags/24.10.0.tar.gz",
+  "integrity": "sha256-j2c8DlTEXhgbi3ZjFzNGjE0xJQ/+873Wrwgjk6IUwGw=",
+  "strip_prefix": "besu-24.10.0",
+  "overlay": {
+    "BUILD.bazel": "sha256-tzqCEIW44v2HGwRL7Sg7jRc+XnRyW38TbfXhJAJC4TE=",
+    "MODULE.bazel": "sha256-AngrfH+bUzeW9fh87qN9mBuc+ohUNZ2cco0V6BcCs10=",
+    "defs.bzl": "sha256-AikAqUUXgIqTsj2PBmBZR6bFXM3fVeh0xR6GzsZkh3c=",
+    "version.patch": "sha256-5jr77NGMgfcF4dFwTR4fk09OKcT/WjVWE3HtBicvyIc="
+  },
+  "patch_strip": 1,
+  "patches": {
+    "version.patch": "sha256-5jr77NGMgfcF4dFwTR4fk09OKcT/WjVWE3HtBicvyIc="
+  }
+}

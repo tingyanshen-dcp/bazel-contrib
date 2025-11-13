@@ -1,0 +1,3 @@
+load("//:workspace_defs.bzl", "dagger_rules")
+
+dagger_rules(repo_name = "@dagger_maven_204500")

@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/tingyanshen-dcp/bazel-contrib/archive/refs/heads/main.zip",
+  "integrity": "",
+  "strip_prefix": "bazel-contrib-main",
+  "overlay": {
+    "MODULE.bazel": ""
+  }
+}

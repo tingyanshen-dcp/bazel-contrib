@@ -1,0 +1,3 @@
+load("//:defs.bzl", "immutables_rules")
+
+immutables_rules(repo_name = "@immutables_maven_209030")

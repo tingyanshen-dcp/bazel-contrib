@@ -1,0 +1,20 @@
+{
+    "homepage": "https://cel.dev",
+    "maintainers": [
+        {
+            "email": "ferstl@intrinsic.ai",
+            "github": "ferstlf",
+            "github_user_id": 64520639,
+            "name": "Florian Ferstl"
+        }
+    ],
+    "repository": [
+        "github:google/cel-cpp"
+    ],
+    "versions": [
+        "0.11.0",
+        "0.12.0",
+        "0.13.0"
+    ],
+    "yanked_versions": {}
+}

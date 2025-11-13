@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/immutables/immutables/archive/refs/tags/2.9.3.tar.gz",
+  "integrity": "sha256-kdKTRj4dZ39hZJKZg0u8uLWtrU1ON7wq6mdlvV9s/jk=",
+  "strip_prefix": "immutables-2.9.3",
+  "patch_strip": 0,
+  "overlay": {
+    "BUILD.bazel": "sha256-knTZ5YX6WB3rjeDQTDSiTTfqXnr4Qko7boj40FsXJIQ=",
+    "MODULE.bazel": "sha256-5rFZ1euIdSeETQpZewuATE+ujO04hlGEbnq6QFm3N0g=",
+    "defs.bzl": "sha256-DM4qAuXQMWnfQVhEvtys7N2cvwaTVVO/mo3w+NrAONI="
+  }
+}
